@@ -48,7 +48,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    # command: >
+    command: celery -A core worker --loglevel=info --concurrency 1 -E
     volumes:
       - .:/app
     depends_on:
