@@ -21,7 +21,7 @@ services:
       - POSTGRES_PORT=$POSTGRES_PORT
       - POSTGRES_USER=$POSTGRES_USER
       - REDIS_HOST=redis
-      - CELERY_BROKER_REDIS_URL=redis
+      - CELERY_BROKER_REDIS_URL=CELERY_BROKER_REDIS_URL
 
   postgres:
     image: postgres
