@@ -20,6 +20,6 @@ app.autodiscover_tasks()
 app.conf.beat_schedule = {
     "scrap_news_daily" : {
         "task": "news_api.tasks.scrap_news",
-        "schedule": crontab(minute=0, hour=8)
+        "schedule": crontab(minute=0, hour="0,6,12,18")
     }
 }
