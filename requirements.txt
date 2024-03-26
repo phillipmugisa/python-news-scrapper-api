@@ -11,3 +11,4 @@ django-celery-beat
 psycopg2-binary
 python-dotenv
 redis
+celery
