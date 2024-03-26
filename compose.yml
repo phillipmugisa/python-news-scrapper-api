@@ -40,14 +40,14 @@ services:
     ports:
       - "6379:6379"
     
-  celery_worker:
-    build: .
-    command: celery -A core worker --beat -l INFO
-    depends_on:
-      - django
-      - redis
-    environment:
-      - REDIS_HOST=redis
+  # celery_worker:
+  #   build: .
+  #   command: celery -A core worker --beat -l INFO
+  #   depends_on:
+  #     - django
+  #     - redis
+  #   environment:
+  #     - REDIS_HOST=redis
 
 volumes:  
   pgdata: {}
